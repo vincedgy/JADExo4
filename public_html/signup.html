@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script src="app.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <h4>Remplisser ce formulaire s'il vous plait</h4>
+        <h6>Son contenu sera vérifier en cliquant sur le bouton</h6>
+        <form class="subscribeForm" name="subscribe" action="http://localhost:8080/subscribe.php" onsubmit="return valider()" >
+            <ul>
+                <li><label for="yourName">Votre nom</label>
+                    <span class="validError" id="yourNameError"></span>
+                    <input type="text" id="yourName" name="yourName" value="" />                    
+                </li>
+                <li><label for="yourFirstName">Votre prénom</label>
+                    <span class="validError" id="yourFirstNameError"></span>
+                    <input type="text" id="yourFirstName" name="yourFirstName" value="" />
+                    </li>
+                <li><label for="yourNickName">Votre pseudo</label>
+                    <span class="validError" id="yourNickNameError"></span>
+                    <input type="text" id="yourNickName" name="yourNickName" value="" />
+                    </li>
+                <li><label for="yourPhone">Votre téléphone</label>
+                    <span class="validError" id="yourPhoneError"></span>
+                    <input type="text" id="yourPhone" name="yourPhone" value="" />
+                    </li>
+                <li><label for="youBirthDate">Votre date de naissance</label>
+                    <span class="validError" id="youBirthDateError"></span>
+                    <input type="date" id="youBirthDate" name="youBirthDate" value="" />
+                    </li>
+                <li><input type="reset" value="Remettre à zéro" name="raz" /></li>
+                <li><input type="submit" value="S'inscrire" name="submit"/></li>
+            </ul>
+        </form>
+    </body>
+</html>

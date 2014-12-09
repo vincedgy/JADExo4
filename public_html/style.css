@@ -1,0 +1,128 @@
+body {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    background-image: url("img/background_4.jpg");
+    background-size: 25%;
+    font-family: "DejaVu Sans";
+}
+
+footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    border-top: groove;          
+    background-image: url("img/background_4.jpg");
+    bottom:0;
+    width:100%;
+    height: 50px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    text-align: right;
+}
+
+header {
+    position:fixed;
+    top:0;
+    left:0;
+    height: 100px;
+    width: 100%;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    border-bottom: groove;          
+    background-image: url("img/background_4.jpg");
+    background-size: 25%
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+section {
+    width: 70%;
+    float:right;
+    margin-top:100px;    
+    margin-left:100px;    
+    padding-right:160px;
+    
+}
+
+section article {
+    margin-top:20px;
+}
+
+section>article h4 {
+    float: left;
+    padding-left:25px;
+}
+section>article h3 {
+    float: right;
+    padding-right:25px;
+}
+
+#leftNav {
+    position:fixed;
+    float: left;
+    width:200px;
+    top:0;
+    margin-top: 100px;
+    border-right: 2px;    
+}
+
+#leftNav li {
+    list-style: none;
+    text-align: left;
+}
+
+#leftNav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.articleContent {
+    text-align: justify;
+    width: 100%;
+    
+    padding:60px;
+    background-color: lightgray;
+    border-radius: 20px;    
+}
+
+.subscribeForm {
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    border-bottom: inset;          
+    background-image: url("img/background_4.jpg");
+    background-size: 25%
+}
+
+.subscribeForm ul li {
+    list-style: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.subscribeForm label {
+    font-weight: bold;
+}
+
+.subscribeForm label:after {
+    color:red;
+    content: " : ";
+}
+
+.subscribeForm input {
+    display: block;
+    margin-right:40%;
+    width: 300px;
+}
+
+.validError {
+    color:red;
+    font-size: small;
+}
+
+.validError:not(:empty):before {
+    font-size: large;
+    font-weight: bold;
+    content: "\2605\0020"
+}
